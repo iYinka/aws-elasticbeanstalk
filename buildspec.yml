@@ -1,0 +1,26 @@
+version: 0.2
+
+env:
+  variables:
+    COUNT: 3
+
+phases:
+  install:
+    commands:
+      - echo "entered the installed phase"
+      
+  pre_build:
+    commands:
+      - echo "entered the Pre-build Phase"
+      - echo "Settings"
+      - echo "Action Firm"
+      - echo "RUnning Test"
+      
+  build:
+    commands:
+      - echo "Hello World"
+      - echo "In your mind now, you are building the application"
+  post_build:
+    commands:
+      - echo "entered the post-Build phase"
+      - echo "we are done here. lol "
